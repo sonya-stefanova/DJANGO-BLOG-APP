@@ -18,9 +18,11 @@ CAPTCHA was added to the comment form.
 <h2>Cache Management</h2>
 Redis service has been configured.
 <h2>Templates and functionalities</h2>
-The project uses Django Template Language. Bootstrap, custom CSS and ready-made template with adjustments in alignment with the project aims have been used. The application has public and private part. 
+The project uses Django Template Language. Bootstrap, custom CSS and ready-made template with customizations to meet the project needs. The application has public and private part. 
 Pagination was implemented where a list view is added. 
-Next/prev functionality is added
+Next/prev functionality is added.
+Section of the most read articles is added. 
+Section for the related articles is available, too.
 <h2>Deployment</h2>
 Docker Compose files, NGINX, Gunicorn were configured. AWS service was used for creating an instance for deployment. 
 DockerHub file:https://hub.docker.com/layers/sonyaharalambieva/blog_app_production/latest/images/sha256:8c8fd3892f4fab78a5c612bbd2be571f8126ee85e025fedd098bfe1be3a2028a 
