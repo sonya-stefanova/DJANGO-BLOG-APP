@@ -27,3 +27,11 @@ Section for the related articles is available, too.
 Docker Compose files, NGINX, Gunicorn were configured. AWS service was used for creating an instance for deployment. 
 DockerHub file:https://hub.docker.com/layers/sonyaharalambieva/blog_app_production/latest/images/sha256:8c8fd3892f4fab78a5c612bbd2be571f8126ee85e025fedd098bfe1be3a2028a 
 <h2>Screenshots</h2>
+![admin](https://github.com/sonya-stefanova/DJANGO-BLOG-APP/assets/72320076/6f73091d-24ec-461d-9f32-4398853f5986)
+![authors page](https://github.com/sonya-stefanova/DJANGO-BLOG-APP/assets/72320076/d1b4bc4c-e4eb-42b1-91f7-e92038e1385b)
+![groups](https://github.com/sonya-stefanova/DJANGO-BLOG-APP/assets/72320076/2f5fd639-f153-41e6-93fe-55900ad5fa62)
+![index1](https://github.com/sonya-stefanova/DJANGO-BLOG-APP/assets/72320076/26a825bb-c3fe-487c-a9e5-aac2382de956)
+![index](https://github.com/sonya-stefanova/DJANGO-BLOG-APP/assets/72320076/6e7f670c-6c28-42ed-ae82-dabb9f32f9af)
+![profile page](https://github.com/sonya-stefanova/DJANGO-BLOG-APP/assets/72320076/dae33608-f267-470d-b605-c95bd0495d9c)
+![rich_article](https://github.com/sonya-stefanova/DJANGO-BLOG-APP/assets/72320076/8ddfeb2b-738a-4b75-bac4-4178aeecc9f9)
+
