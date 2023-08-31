@@ -1,5 +1,5 @@
 # DJANGO-BLOG-APP
-This is a Django Blog App created in connection with Softuni Python Develoment Web Course project requierments.The application is implemented using Django Framework.
+This is a Django Blog App created in connection with Softuni Python Develoment Web Course project requierments.The application is implemented using Django Framework and uses class-based-views and a couple of function-based-views.
 <h2>Introduction</h2>
 Django blog app is a multi-user blogging application with options to the registered users to perform full CRUD article operations, meaning that they can create, update, delete and read articles.
 Users that are not logged in can only read articles. The users with profiles can favourite a particular article, change their profile settings, password, log in, log out, store all favourited articles. When a user is register, s/he automatically sign in. 
