@@ -1,0 +1,48 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CssUnknownProperty" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myCustomPropertiesEnabled" value="true" />
+      <option name="myIgnoreVendorSpecificProperties" value="false" />
+      <option name="myCustomPropertiesList">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="flex_basis" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="plants" />
+            <item index="1" class="java.lang.String" itemvalue="multipart" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="Inheritance.Person.child.Person" />
+          <option value="Inheritance.person" />
+          <option value="Inheritance.Zoo.mammal.Animal" />
+          <option value="wild_farm_properties.animals.animal.food" />
+          <option value="wild_farm_properties.animals.birds.animals" />
+          <option value="wild_farm_properties.animals.birds.*" />
+          <option value="wild_farm_properties.animals.mammals.Vegetable" />
+          <option value="project.dog.Animal" />
+          <option value="get_numbers.decorators" />
+          <option value="student.tests.test_student.project" />
+          <option value="unit_testing_ex.vehicle.test.test_vehicle.project" />
+          <option value="project.supply.food.Supply" />
+          <option value="project.player.Validator" />
+          <option value="bool.delicacy_orders" />
+          <option value="list.astronauts" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

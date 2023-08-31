@@ -1,0 +1,48 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load bootstrap4 %}
+{% block page_content %}
+
+    <!--================Home Banner Area =================-->
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0"
+                 data-background=""></div>
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h2>Delete Article</h2>
+                    <div class="page_link">
+                        <a href="{% url 'home' %}">Home</a>
+                        <a>Delete Article</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================Blog Area =================-->
+    <section class="blog_area p_120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 style="font-size: 24px; font-weight: bold;">Are you sure you want to delete your article?</h2>
+                    <div class="blog_left_sidebar">
+                        <form method="post" action="{% url 'delete_article' object.slug %}">
+                            {% csrf_token %}
+                            <a href="{% url 'details_article' slug=object.slug %}" class="genric-btn info circle">No</a>
+                            <button type="submit" class="genric-btn danger circle">Yes, Delete it!</button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+                {% include 'partials/side_bar.html' %}
+            </div>
+        </div>
+    </section>
+    <!--================Blog Area =================-->
+{% endblock %}

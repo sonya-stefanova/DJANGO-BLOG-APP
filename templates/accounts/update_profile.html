@@ -1,0 +1,47 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block page_content %}
+
+
+    <!--================Home Banner Area =================-->
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0"
+                 data-background=""></div>
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h2>Sign-in</h2>
+                    <div class="page_link">
+                        <a href="{% url 'home' %}">Home</a>
+                        <a>Edit profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================Blog Area =================-->
+    <section class="blog_area p_120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2>Update Your Profile</h2>
+                    <div class="blog_left_sidebar">
+                        <form method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {% include 'partials/form_fields_errors_alerts.html' %}
+                            {{ form.as_p }}
+
+                            <div>
+                                <button type="submit" class="btn btn-success">Update</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                {% include 'partials/side_bar.html' %}
+            </div>
+        </div>
+    </section>
+    <!--================Blog Area =================-->
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block page_content %}
+    <!--================Home Banner Area =================-->
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0"
+                 data-background=""></div>
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h1>WRITE FOR US</h1>
+
+                    <div class="page_link">
+                        <a href="{% url 'home' %}">Home</a>
+                        <a>Contribute</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================Blog Area =================-->
+    <section class="blog_area p_120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="blog_left_sidebar">
+                        <div class="container">
+                            <h2 class="mb-4">We are open for partnerships, contributions, and collaborations!</h2>
+                            <div>
+                            <img src="{% static 'img/home-blog/write-for-us.jpg' %}" class="img-fluid mb-4" alt="Write for Us Image">
+                            </div>
+                            <p class="mb-4">We're always eager to connect with talented individuals and explore new opportunities. Do you have insightful ideas you're excited to share? Does your area of expertise align with the topics covered in our blog? Feel free to reach out!</p>
+
+
+                            <h3 class="mb-3">Blog Topics</h3>
+                            <ul>
+                                <li>.........</li>
+                            </ul>
+
+                            <h3 class="mb-3">Get in Touch</h3>
+                            <p class="mb-4">How can you reach out to us? Simply send your suggestions to ... Please introduce yourself and provide some context about your expertise.</p>
+
+
+                            <p>Depending on the volume of submissions we receive, the review process might take about a
+                                week. If your submission aligns with our content direction, we'll contact you via email
+                                to discuss your contribution further.</p>
+                        </div>
+
+                    </div>
+                    </div>
+                {% include 'partials/side_bar.html' %}
+            </div>
+        </div>
+
+
+    </section>
+    <!--================Blog Area =================-->
+{% endblock %}

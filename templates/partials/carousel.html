@@ -1,0 +1,59 @@
+<div class="carousel-container">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            {% for article in slider %}
+                <li data-bs-target="#myCarousel" data-bs-slide-to="{{ forloop.counter0 }}"
+                    {% if forloop.first %}class="active"{% endif %}></li>
+            {% endfor %}
+        </ol>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            {% for article in slider %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                    <img src="{{ article.image.url }}" alt="{{ article.title }}" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="post_text">
+                            <a href="{% url 'details_article' slug=article.slug %}"><h3>{{ article.title }}</h3></a>
+
+                            {% for tag in article.tag.all %}
+                                <a class="button-read-more" href="{% url 'details_tags' tag.slug %}">{{ tag.title }}</a>
+                            {% endfor %}<br>
+
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+</div>
+
+<script>
+    // Add event listeners to the carousel controls
+    const carousel = document.getElementById("myCarousel");
+    const carouselControls = carousel.querySelectorAll(".carousel-control-prev, .carousel-control-next");
+
+    carouselControls.forEach((control) => {
+        control.addEventListener("click", () => {
+            const targetSlide = control.getAttribute("data-bs-slide");
+            const carouselInstance = new bootstrap.Carousel(carousel);
+
+            if (targetSlide === "prev") {
+                carouselInstance.prev();
+            } else if (targetSlide === "next") {
+                carouselInstance.next();
+            }
+        });
+    });
+</script>

@@ -1,0 +1,65 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block page_content %}
+    <!--================Home Banner Area =================-->
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0"
+                 data-background=""></div>
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h1>Enjoy Interesting Topics From The Same Topic</h1>
+                    <div class="page_link">
+                        <a href="{% url 'home' %}">Home</a>
+                        <a>{{ tag.title|capfirst }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================Blog Area =================-->
+    <section class="blog_area p_120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="widget_title"> We've selected {{ tag.articles_counter }} articles that might be of your
+                        interest!</h2>
+                    <div class="blog_left_sidebar">
+                        {% for article in articles_list %}
+                            <article class="blog_style1">
+                                <div class="blog_img">
+                                    <img class="img-fluid" src="{{ article.image.url }}" alt="{{ article.title }}" style="width:100%;height:400px">
+                                </div>
+                                <div class="blog_text">
+                                    <div class="blog_text_inner">
+                                        {% for tag in article.tag.all %}
+                                            <a class="cat"
+                                               href="{% url 'details_tags' slug=tag.slug %}">{{ tag.title }}</a>
+                                        {% endfor %}                                        <a
+                                            href="{% url 'details_tags' slug=tag.slug %}"><h4>{{ article.title }}</h4>
+                                    </a>
+                                        <p>{{ article.intro|truncatechars:200 |safe }}</p>
+                                     <a class="button-read-more" href="{% url 'details_article' slug=article.slug %}"
+                   alt="{{ article.title }}">Read More</a>
+                                        <div class="date">
+                                            <a href="#"><i class="fa fa-calendar"
+                                                           aria-hidden="true"></i> {{ article.created_on }}</a>
+                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 05 </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        {% endfor %}
+                        {% if is_paginated %}
+                            {% include 'partials/pagination.html' %}
+                        {% endif %}
+                    </div>
+                </div>
+                {% include 'partials/side_bar.html' %}
+            </div>
+        </div>
+    </section>
+    <!--================Blog Area =================-->
+{% endblock %}

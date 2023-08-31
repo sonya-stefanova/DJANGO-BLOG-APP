@@ -1,0 +1,233 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% load simple_tags %}
+{% load crispy_forms_tags %}
+{% load bootstrap4 %}
+{% block page_content %}
+    <!--================Breadcrumbs area =================-->
+
+    <div class="breadcrumbs">
+        <a href="{% url 'home' %}">Home</a> &gt;
+        <span>{{ article.title }}</span>
+    </div>
+    <section class="blog_area p_120 single-post-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="main_blog_details">
+                        <h1>{{ object.title }}</h1>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="article-info">
+                                    Views: {{ article.clicked_times }} | Created
+                                    on: {{ article.created_on|date:"F d, Y" }}
+                                    | Author: <a href="{% url 'author-articles' slug=author_profile.slug %}">
+                                    {{ author_profile.full_name }}</a>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <div class="float-left tag-list">
+                                    {% for tag in object.tag.all %}
+                                        <a class="button-read-more" href="{% url 'details_tags' slug=tag.slug %}"
+                                           class="custom-tag"
+                                           style="font-size: 12px; ">{{ tag.title }}</a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <img src="{{ article.image.url }}" alt="{{ article.title }}" class="img-fluid">
+
+                        <div id="table-of-contents"></div>
+
+                        <p>{{ object.content|safe }}</p>
+
+                        {% if article.author == request.user %}
+                            <a href="{% url 'update_article' article.slug %}" class="button-read-more">Update
+                                Article</a>
+                            <a href="{% url 'delete_article' article.slug %}" class="button-read-more">Delete
+                                Article</a>
+                        {% endif %}
+                        {% if user.is_authenticated %}
+                            <div class="favorite-article">
+                                {% if user.profile in article.favourited_by.all %}
+                                    <p>This article is in your favorites!</p>
+                                    <a href="{% url 'favorite_post' slug=article.slug %}" class="btn btn-danger">
+                                        <span class="bookmark-heart"><i class="bi bi-bookmark-heart-fill"></i></span>
+                                        Remove from Favorites
+                                    </a>
+                                {% else %}
+                                    <a href="{% url 'favorite_post' slug=article.slug %}" class="btn btn-success">
+                                        <span class="bookmark-heart"><i class="bi bi-bookmark-heart"></i></span>
+                                        Add to Favorites
+                                    </a>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+
+                        <div class="navigation-area">
+                            <div class="row">
+                                {% if previous_article %}
+                                    <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
+                                        <div class="thumb">
+                                            <a href="{% url 'details_article' previous_article.slug %}"><img
+                                                    class="img-fluid" src="{{ previous_article.image.url }}"
+                                                    alt="{{ previous_article.title }}" style="width:50px; height:50px"></a>
+                                        </div>
+                                        <div class="arrow">
+                                            <a href="{% url 'details_article' previous_article.slug %}"><span
+                                                    class="lnr text-white lnr-arrow-left"></span></a>
+                                        </div>
+                                        <div class="detials">
+                                            <p>Previous Article</p>
+                                            <a href="{% url 'details_article' previous_article.slug %}">
+                                                <h4>{{ previous_article.title }}</h4></a>
+                                        </div>
+                                    </div>
+                                {% else %}
+                                    <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
+                                        <div class="thumb">
+                                            <a href="#"><img class="img-fluid" src="{{ object.image.url }}"
+                                                             alt="" style="width:50px; height:50px"></a>
+                                        </div>
+                                        <div class="arrow">
+                                            <a href="#"><span class="lnr text-white lnr-arrow-left"></span></a>
+                                        </div>
+                                        <div class="detials">
+                                            <p>No Previous Article</p>
+                                            <a href="{% url 'home' %}"><h4>Return to Home</h4></a>
+                                        </div>
+                                    </div>
+                                {% endif %}
+
+                                {% if next_article %}
+                                    <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
+                                        <div class="details">
+                                            <p>Next Article</p>
+                                            <a href="{% url 'details_article' next_article.slug %}"
+                                               style="width:50px; height:50px"><h4>{{ next_article.title }}</h4></a>
+                                        </div>
+                                        <div class="arrow">
+                                            <a href="{% url 'details_article' next_article.slug %}"><span
+                                                    class="lnr text-white lnr-arrow-right"></span></a>
+                                        </div>
+                                        <div class="thumb">
+                                            <a href="{% url 'details_article' next_article.slug %}"><img
+                                                    class="img-fluid"
+                                                    src="{{ next_article.image.url }}"
+                                                    style="width:50px; height:50px"
+                                                    alt=""></a>
+                                        </div>
+                                    </div>
+                                {% else %}
+                                    <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
+                                        <div class="detials">
+                                            <p>No Next Article Yet</p>
+                                            <a href="{% url 'home' %}"><h4>Go to Home</h4></a>
+                                        </div>
+                                        <div class="arrow">
+                                            <a href="{% url 'home' %}"><span
+                                                    class="lnr text-white lnr-arrow-right"></span></a>
+                                        </div>
+                                        <div class="thumb">
+                                            <a href="{% url 'home' %}"><img class="img-fluid"
+                                                                            src="{{ object.image.url }}"
+                                                                            style="width:50px; height:50px"
+                                                                            alt=""></a>
+                                        </div>
+                                    </div>
+
+                                {% endif %}
+                            </div>
+                        </div>
+
+
+                        {% if article.comments_counter > 0 %}
+                            <div class="comments-area">
+
+                                <h4> Comments /{{ article.comments_counter }}/: </h4>
+                                {% for comment in article.comments.all %}
+                                    <div class="comment-list">
+                                        <div class="single-comment justify-content-between d-flex">
+                                            <div class="user justify-content-between d-flex">
+
+                                                <div class="desc">
+                                                    <h5><a href="#">{{ comment.name }}</a></h5>
+                                                    <p class="date">{{ comment.created_on }}</p>
+                                                    <p class="comment">
+                                                        {{ comment.content }}
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                        <div class="comment-form">
+                            <h4>Leave a comment or your impressions here</h4>
+                            {# error handling if form is invalid #}
+                            {% if form.errors %}
+                                <div class="alert alert-danger mt-3">
+                                    <strong>Error(s) occurred:</strong>
+                                    {% include 'partials/form_fields_errors_alerts.html' %}
+                                </div>
+                            {% endif %}
+                            {% crispy form %}
+
+                        </div>
+                    </div>
+                </div>
+                    <!-- Sidebar content goes here -->
+                    {% include 'partials/side_bar.html' %}
+                </div>
+            </div>
+
+            {% if object.related_articles.exists %}
+                <div class="related-articles">
+                    <h3 style="text-align:center">Related Articles You Might LOVE to See</h3>
+                    <div class="row">
+                        {% for related_article in object.related_articles.all %}
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="{{ related_article.image.url }}"
+                                         alt="{{ related_article.title }}">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{ related_article.title }}</h5>
+                                        <p class="card-text">{{ related_article.intro|truncatechars:200|safe}}</p>
+                                        <a href="{% url 'details_article' slug=related_article.slug %}"
+                                           class="btn btn-primary">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+
+            <!--================Blog Area =================-->
+            <script>
+                // Generate Table of Contents
+                document.addEventListener('DOMContentLoaded', function () {
+                    const tocContainer = document.getElementById('table-of-contents');
+                    const headings = document.querySelectorAll('.main_blog_details h2, .main_blog_details h3');
+
+                    let tocHtml = '<div class="table-of-contents"><h3>Table of Contents</h3><ul>';
+                    headings.forEach(function (heading) {
+                        const tag = heading.tagName.toLowerCase();
+                        const text = heading.textContent;
+                        const anchorText = text.replace(/\s+/g, '_'); // Replace spaces with underscores
+                        tocHtml += `<li><a href="#${anchorText}" class="toc-${tag}">${text}</a></li>`;
+                    });
+                    tocHtml += '</ul></div>';
+                    tocContainer.innerHTML = tocHtml;
+                });
+            </script>
+{% endblock %}

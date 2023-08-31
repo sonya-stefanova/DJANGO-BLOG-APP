@@ -1,0 +1,135 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block page_content %}
+
+    <!--================Banner Area =================-->
+
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0"
+                 data-background=""></div>
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h1>{{ profile.full_name }}'s Profile </h1>
+                    <div class="page_link">
+                        <a href="{% url 'home' %}">Home</a>
+                        <a>{{ profile.full_name }}'s Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="user-profile-section bg-success py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center">
+                        <div class="user-profile-photo mr-4">
+                            {% if profile.image %}
+                                <img src="{{ profile.image.url }}" alt="{{ profile.full_name }}"
+                                     class="img-fluid rounded-circle">
+                            {% else %}
+                                <img src="{% static 'img/default-avatar-profile-icon-of-social-media-user-vector.jpg' %}"
+                                     alt="{{ profile.full_name }}" class="img-fluid rounded-circle">
+                            {% endif %}
+                        </div>
+                        <div class="user-profile-info">
+                            <h2 class="mb-2">{{ profile.full_name }}</h2>
+                            <p>{{ profile.bio }}</p>
+                            {% if user.is_authenticated and user.profile == profile %}
+                                <a href="{% url 'update-profile' slug=profile.slug %}" class="btn btn-primary">Update
+                                    Profile</a>
+                            {% endif %}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="blog_area p_120">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="blog_left_sidebar"
+                         style="background-color: lightgray; padding:15px; margin: 15px; border-radius: 10px">
+                        <h2>My Saved Favorite Articles</h2>
+                        <ul>
+                            {% for article in favorited_articles %}
+                                <li>
+                                    <a href="{% url 'details_article' slug=article.slug %}">{{ article.title }}</a>
+                                </li>
+                            {% empty %}
+                                <p>No favorite articles yet.</p>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="blog_left_sidebar">
+
+                    {% if user_articles %}
+                        <h2 style="margin:15px;padding:15px;">My Articles</h2>
+
+                        {% for article in authored_articles %}
+                            <article class="blog_style1">
+                                <div class="blog_img">
+                                    <img class="img-fluid" src="{{ article.image.url }}"
+                                         alt="{{ article.title }}"
+                                         style="width:100%;height:400px">
+                                </div>
+                                <div class="blog_text">
+                                    <div class="blog_text_inner">
+                                        {% for tag in article.tag.all %}
+                                            <a class="cat"
+                                               href="{% url 'details_tags' slug=tag.slug %}">{{ tag.title }}</a>
+                                        {% endfor %}
+                                        <a href="{% url 'details_article' slug=article.slug %}">
+                                            <h4>{{ article.title }}</h4>
+                                        </a>
+                                        <p>{{ article.intro|truncatechars:200|safe }}</p>
+                                        <a class="button-read-more"
+                                           href="{% url 'details_article' slug=article.slug %}"
+                                           alt="{{ article.title }}">Read More</a>
+                                        <div class="date">
+                                            <a href="#">
+                                                <i class="fa fa-calendar"
+                                                   aria-hidden="true"></i> {{ article.created_on|date:"F d, Y" }}
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-comments-o"
+                                                   aria-hidden="true"></i> {{ article.comments_counter }}
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        {% endfor %}
+                    {% endif %}
+
+                    {% if is_paginated %}
+                        {% include 'partials/pagination.html' %}
+                    {% endif %}
+
+                </div>
+            </div>
+            {% include 'partials/side_bar.html' %}
+        </div>
+    </div>
+
+</section>
+
+
+{% endblock %}
+
+
+
+
+
