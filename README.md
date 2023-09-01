@@ -34,4 +34,5 @@ DockerHub file:https://hub.docker.com/layers/sonyaharalambieva/blog_app_producti
 ![index](https://github.com/sonya-stefanova/DJANGO-BLOG-APP/assets/72320076/6e7f670c-6c28-42ed-ae82-dabb9f32f9af)
 ![profile page](https://github.com/sonya-stefanova/DJANGO-BLOG-APP/assets/72320076/dae33608-f267-470d-b605-c95bd0495d9c)
 ![rich_article](https://github.com/sonya-stefanova/DJANGO-BLOG-APP/assets/72320076/8ddfeb2b-738a-4b75-bac4-4178aeecc9f9)
+![image](https://github.com/sonya-stefanova/DJANGO-BLOG-APP/assets/72320076/94dced4f-0823-4cb1-a7b9-2e5012575678)
 
