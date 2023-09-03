@@ -4,11 +4,79 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91d8b64b-00c2-49ec-ba20-5cc84200f8a8" name="Changes" comment="" />
+    <list default="true" id="91d8b64b-00c2-49ec-ba20-5cc84200f8a8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.production.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/.env" beforeDir="false" afterPath="$PROJECT_DIR$/envs/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/accounts/uploads/Untitled_design.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/conf.d/web.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/conf.d/web.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/logs/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/logs/access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/1259" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/1259" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16397" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16397" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16451" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16451" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16514" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16514" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16515" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16515" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16521" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16521" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16533" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16533" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16534" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16534" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16535" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16535" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16536" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16536" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16536_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16536_fsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16540" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16540" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16542" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16542" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16544" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16544" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16547" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16547" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16556" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16556" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16557" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16557" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16560" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16560" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16562" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16562" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16590" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16590" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16591" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16591" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16594" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16594" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16596" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16596" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16597" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16597" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16600" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16600" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16607" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16607" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16608" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16608" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16611" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16611" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16630" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16630" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16645" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16645" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16657" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16657" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16658" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16658" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16659" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16659" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16671" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16671" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16672" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16672" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16678" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16678" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16679" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16679" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16682" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16682" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16684" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16684" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16696" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16696" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16697" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16697" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16700" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16700" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16705" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16705" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16707" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16707" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16708" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/16708" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/2619" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/2619" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/2619_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/2619_fsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/2696" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/base/16384/2696" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/base/16384/pg_internal.init" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/global/pg_control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/global/pg_internal.init" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/pg_wal/000000010000000000000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/pg_xact/0000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/postmaster.pid" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/postmaster.pid" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -21,6 +89,9 @@
         <option value="Dockerfile" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../Python_Web_2023/blog_app/Lib/site-packages/django/contrib/admin/templates/admin/index.html" root0="SKIP_INSPECTION" />
@@ -39,6 +110,7 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2SwfCRfy2RlQBydfSu08QPW34Nm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,8 +122,9 @@
     &quot;Notification.DoNotAsk-Kubernetes Notifications&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/PycharmProjects/Django_Web_Framework/blog_app/docker-compose.yml&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/PycharmProjects/Django_Web_Framework/blog_app/docker-compose.production.yml&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -81,7 +154,7 @@
       <recent name="C:\Users\User\PycharmProjects\Django_Web_Framework\blog_app\static" />
     </key>
   </component>
-  <component name="RunManager" selected="Django Server.blog_app">
+  <component name="RunManager" selected="Docker.for_deploy">
     <configuration name="Test: " type="DjangoTestsConfigurationType" temporary="true">
       <module name="blog_app" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -188,7 +261,7 @@
       <deployment type="docker-compose.yml">
         <settings>
           <option name="envFilePath" value="" />
-          <option name="sourceFilePath" value="docker-compose.yml" />
+          <option name="sourceFilePath" value="docker-compose.production.yml" />
         </settings>
       </deployment>
       <method v="2" />
@@ -264,12 +337,47 @@
       <workItem from="1693424382557" duration="5161000" />
       <workItem from="1693430090550" duration="3517000" />
       <workItem from="1693434446280" duration="112000" />
-      <workItem from="1693455978303" duration="2987000" />
+      <workItem from="1693455978303" duration="6394000" />
+      <workItem from="1693569519301" duration="8927000" />
+      <workItem from="1693579934227" duration="319000" />
+      <workItem from="1693630593943" duration="6445000" />
+      <workItem from="1693771933441" duration="1803000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit - development stage">
+      <option name="closed" value="true" />
+      <created>1693485208262</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693485208262</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="initial commit - development stage" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit - development stage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -291,7 +399,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/blog_app/settings.py</url>
-          <line>35</line>
+          <line>33</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>

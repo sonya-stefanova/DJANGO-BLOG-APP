@@ -7,7 +7,8 @@ services:
     command: gunicorn --bind=0.0.0.0:8000 blog_app.wsgi:application
     platform: linux/amd64
     volumes:
-      - ./media/accounts:/home/app/web/media/
+      - ./staticfiles:/tmp/blog_app/staticfiles
+      - ./mediafiles:/tmp/blog_app/mediafiles
     ports:
       - "8000:8000"
     env_file:
@@ -34,7 +35,7 @@ services:
       - "443:443"
     volumes:
       - ./staticfiles:/home/app/web/staticfiles
-      - ./media:/home/app/web/media
+      - ./mediafiles:/home/app/web/mediafiles
       - ./nginx/conf.d:/etc/nginx/conf.d
       - ./nginx/logs:/var/log/nginx
       - ./certbot/www:/var/www/certbot/:ro

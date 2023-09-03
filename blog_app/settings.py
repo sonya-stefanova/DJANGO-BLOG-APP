@@ -23,37 +23,34 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = os.environ.get('SECRET_KEY')
-SECRET_KEY='django-insecure-vpl380zxe&kc6-9)$961ispny^c8v5)x4o58=qiluv(mc9w94w'
-DEBUG = True
-ALLOWED_HOSTS = ['127.0.0.1']
+# SECRET_KEY='django-insecure-vpl380zxe&kc6-9)$961ispny^c8v5)x4o58=qiluv(mc9w94w'
+SECRET_KEY = os.environ.get('SECRET_KEY')
+DEBUG = int(os.environ.get('DEBUG', 1))
+# ALLOWED_HOSTS = ['127.0.0.1']
 # SECURITY WARNING: don't run with debug turned on in production!
-# ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', ' ').split()
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split()
+CSRF_TRUSTED_ORIGINS = [f'http://{x}:80' for x in os.environ.get('ALLOWED_HOSTS', '').split(' ')]
 
-
-# CSRF_TRUSTED_ORIGINS = [f'http://{x}:80' for x in os.environ.get('ALLOWED_HOSTS', '').split(' ')]
-
+DATABASES = {
+    'default': {
+        'ENGINE': os.environ.get('DB_ENGINE', 'django.db.backends.postgresql'),
+        'NAME': os.environ.get('DB_NAME', 'blogdb'),
+        'USER': os.environ.get('DB_USER', 'postgres-user'),
+        'PASSWORD': os.environ.get('DB_PASSWORD', 'password'),
+        'HOST': os.environ.get('DB_HOST', '127.0.0.1'),
+        'PORT': os.environ.get('DB_PORT', '5432'),
+    },
+}
 # DATABASES = {
 #     "default": {
 #         "ENGINE": "django.db.backends.postgresql",
-#         "NAME": os.getenv('DB_NAME', None),
-#         "USER": os.getenv('DB_USER', None),
-#         "PASSWORD": os.getenv('DB_PASSWORD', None),
-#         "HOST": os.getenv('DB_HOST', 'postgres'),
-#         "PORT": os.getenv('DB_PORT', '5432'),
+#         "NAME": "blogdb",
+#         "USER": "postgres-user",
+#         "PASSWORD": "password",
+#         "HOST": "127.0.0.1",
+#         "PORT": "5432",
 #     }
 # }
-
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "blogdb",
-        "USER": "postgres-user",
-        "PASSWORD": "password",
-        "HOST": "127.0.0.1",
-        "PORT": "5432",
-    }
-}
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -151,12 +148,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (BASE_DIR / 'static',)
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_DIRS = (BASE_DIR / 'staticfiles',)
+STATIC_ROOT = BASE_DIR / '/tmp/petstagram/staticfiles'
 
-MEDIA_URL = "/media/"
-MEDIA_ROOT = BASE_DIR / "media"
-
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/tmp/blog_app/mediafiles'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
