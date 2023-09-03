@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="91d8b64b-00c2-49ec-ba20-5cc84200f8a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/conf.d/web.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/conf.d/web.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/logs/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/logs/access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/envs/.env" beforeDir="false" afterPath="$PROJECT_DIR$/envs/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nginx/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/logs/error.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -283,7 +282,7 @@
       <workItem from="1693569519301" duration="8927000" />
       <workItem from="1693579934227" duration="319000" />
       <workItem from="1693630593943" duration="6445000" />
-      <workItem from="1693771933441" duration="3425000" />
+      <workItem from="1693771933441" duration="4075000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit - development stage">
       <option name="closed" value="true" />
@@ -301,7 +300,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693776642250</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial commit - development stage">
+      <option name="closed" value="true" />
+      <created>1693778261395</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693778261395</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initial commit - deployment">
+      <option name="closed" value="true" />
+      <created>1693778352510</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693778352510</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +342,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="initial commit - development stage" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit - development stage" />
+    <MESSAGE value="initial commit - deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit - deployment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

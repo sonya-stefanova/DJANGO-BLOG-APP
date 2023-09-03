@@ -11424,3 +11424,17 @@
 2023/09/02 12:23:53 [error] 22#22: *33 open() "/home/app/web/mediafiles/uploads/index.png" failed (2: No such file or directory), client: 172.28.0.1, server: blog-app.com, request: "GET /media/uploads/index.png HTTP/1.1", host: "blog-app.com", referrer: "http://blog-app.com/"
 2023/09/02 12:23:53 [error] 22#22: *33 open() "/home/app/web/mediafiles/uploads/index.png" failed (2: No such file or directory), client: 172.28.0.1, server: blog-app.com, request: "GET /media/uploads/index.png HTTP/1.1", host: "blog-app.com", referrer: "http://blog-app.com/"
 2023/09/02 12:45:58 [warn] 20#20: *55 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000002, client: 172.28.0.1, server: blog-app.com, request: "POST /create-article/ HTTP/1.1", host: "blog-app.com", referrer: "http://blog-app.com/create-article/"
+2023/09/03 22:07:39 [notice] 1#1: using the "epoll" event method
+2023/09/03 22:07:39 [notice] 1#1: nginx/1.25.2
+2023/09/03 22:07:39 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/03 22:07:39 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/09/03 22:07:39 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/03 22:07:39 [notice] 1#1: start worker processes
+2023/09/03 22:07:39 [notice] 1#1: start worker process 20
+2023/09/03 22:07:39 [notice] 1#1: start worker process 21
+2023/09/03 22:07:39 [notice] 1#1: start worker process 22
+2023/09/03 22:07:39 [notice] 1#1: start worker process 23
+2023/09/03 22:07:39 [notice] 1#1: start worker process 24
+2023/09/03 22:07:39 [notice] 1#1: start worker process 25
+2023/09/03 22:07:39 [notice] 1#1: start worker process 26
+2023/09/03 22:07:39 [notice] 1#1: start worker process 27
