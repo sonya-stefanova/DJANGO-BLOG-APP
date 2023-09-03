@@ -1,0 +1,39 @@
+Index: nginx/logs/access.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/nginx/logs/access.log b/nginx/logs/access.log
+--- a/nginx/logs/access.log	(revision 290328c3740f2e33c107fa66166bfd79fa74213b)
++++ b/nginx/logs/access.log	(date 1693744910415)
+@@ -7829,3 +7829,17 @@
+ 172.28.0.1 - - [02/Sep/2023:12:24:11 +0000] "GET /static/fonts/fontawesome-webfont.woff2?v=4.5.0 HTTP/1.1" 200 71896 "http://blog-app.com/static/css/font-awesome.min.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
+ 172.28.0.1 - - [02/Sep/2023:12:24:11 +0000] "GET /static/vendors/linericon/fonts/Linearicons-Free.woff2?w118d HTTP/1.1" 200 21780 "http://blog-app.com/static/vendors/linericon/style.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
+ 172.28.0.1 - - [02/Sep/2023:12:24:12 +0000] "GET /static/favicon.ico HTTP/1.1" 200 3149 "http://blog-app.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
++172.28.0.1 - - [02/Sep/2023:12:25:55 +0000] "GET / HTTP/1.1" 200 17079 "http://blog-app.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
++172.28.0.1 - - [02/Sep/2023:12:25:55 +0000] "GET /media/uploads/authors_page.png HTTP/1.1" 304 0 "http://blog-app.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
++172.28.0.1 - - [02/Sep/2023:12:44:20 +0000] "GET /create-article/ HTTP/1.1" 200 18555 "http://blog-app.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
++172.28.0.1 - - [02/Sep/2023:12:44:20 +0000] "GET /media/uploads/authors_page.png HTTP/1.1" 304 0 "http://blog-app.com/create-article/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
++172.28.0.1 - - [02/Sep/2023:12:45:58 +0000] "POST /create-article/ HTTP/1.1" 302 0 "http://blog-app.com/create-article/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
++172.28.0.1 - - [02/Sep/2023:12:45:58 +0000] "GET /test_article/ HTTP/1.1" 200 24442 "http://blog-app.com/create-article/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
++172.28.0.1 - - [02/Sep/2023:12:45:58 +0000] "GET /media/uploads/tools-864983_1280.jpg HTTP/1.1" 200 468657 "http://blog-app.com/test_article/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
++172.28.0.1 - - [02/Sep/2023:12:52:00 +0000] "GET /test_article/adad HTTP/1.1" 404 4357 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
++172.28.0.1 - - [02/Sep/2023:12:52:00 +0000] "GET /favicon.ico HTTP/1.1" 404 4339 "http://blog-app.com/test_article/adad" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
++172.28.0.1 - - [03/Sep/2023:12:41:46 +0000] "GET /test_article/adad HTTP/1.1" 404 4357 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
++172.28.0.1 - - [03/Sep/2023:12:41:47 +0000] "GET /favicon.ico HTTP/1.1" 404 4339 "http://blog-app.com/test_article/adad" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
++172.28.0.1 - - [03/Sep/2023:12:41:50 +0000] "GET /test_article/ HTTP/1.1" 200 24194 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
++172.28.0.1 - - [03/Sep/2023:12:41:50 +0000] "GET /media/uploads/authors_page.png HTTP/1.1" 304 0 "http://blog-app.com/test_article/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
++172.28.0.1 - - [03/Sep/2023:12:41:50 +0000] "GET /media/uploads/tools-864983_1280.jpg HTTP/1.1" 304 0 "http://blog-app.com/test_article/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
+Index: nginx/logs/error.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/nginx/logs/error.log b/nginx/logs/error.log
+--- a/nginx/logs/error.log	(revision 290328c3740f2e33c107fa66166bfd79fa74213b)
++++ b/nginx/logs/error.log	(date 1693657366468)
+@@ -11423,3 +11423,4 @@
+ 2023/09/02 12:23:52 [error] 20#20: *28 open() "/home/app/web/mediafiles/uploads/index.png" failed (2: No such file or directory), client: 172.28.0.1, server: blog-app.com, request: "GET /media/uploads/index.png HTTP/1.1", host: "blog-app.com", referrer: "http://blog-app.com/dd/"
+ 2023/09/02 12:23:53 [error] 22#22: *33 open() "/home/app/web/mediafiles/uploads/index.png" failed (2: No such file or directory), client: 172.28.0.1, server: blog-app.com, request: "GET /media/uploads/index.png HTTP/1.1", host: "blog-app.com", referrer: "http://blog-app.com/"
+ 2023/09/02 12:23:53 [error] 22#22: *33 open() "/home/app/web/mediafiles/uploads/index.png" failed (2: No such file or directory), client: 172.28.0.1, server: blog-app.com, request: "GET /media/uploads/index.png HTTP/1.1", host: "blog-app.com", referrer: "http://blog-app.com/"
++2023/09/02 12:45:58 [warn] 20#20: *55 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000002, client: 172.28.0.1, server: blog-app.com, request: "POST /create-article/ HTTP/1.1", host: "blog-app.com", referrer: "http://blog-app.com/create-article/"
