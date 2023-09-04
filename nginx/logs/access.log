@@ -7849,3 +7849,6 @@
 172.28.0.1 - - [04/Sep/2023:12:26:28 +0000] "GET / HTTP/1.1" 400 61590 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
 172.28.0.1 - - [04/Sep/2023:12:26:29 +0000] "GET /favicon.ico HTTP/1.1" 400 61441 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
 172.28.0.1 - - [04/Sep/2023:14:05:31 +0000] "GET / HTTP/1.1" 499 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
+172.28.0.1 - - [04/Sep/2023:16:42:46 +0000] "GET / HTTP/1.1" 400 61035 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
+172.28.0.1 - - [04/Sep/2023:16:42:46 +0000] "GET / HTTP/1.1" 400 60761 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
+172.28.0.1 - - [04/Sep/2023:16:42:47 +0000] "GET /favicon.ico HTTP/1.1" 400 60721 "http://blog-app.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" "-"
