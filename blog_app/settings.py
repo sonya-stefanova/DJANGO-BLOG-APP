@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY='django-insecure-vpl380zxe&kc6-9)$961ispny^c8v5)x4o58=qiluv(mc9w94w'
 SECRET_KEY = os.environ.get('SECRET_KEY')
-DEBUG = int(os.environ.get('DEBUG', 1))
+DEBUG = os.environ.get('DEBUG')
 # ALLOWED_HOSTS = ['127.0.0.1']
 # SECURITY WARNING: don't run with debug turned on in production!
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split()
@@ -37,7 +37,7 @@ DATABASES = {
         'NAME': os.environ.get('DB_NAME', 'blogdb'),
         'USER': os.environ.get('DB_USER', 'postgres-user'),
         'PASSWORD': os.environ.get('DB_PASSWORD', 'password'),
-        'HOST': os.environ.get('DB_HOST', '127.0.0.1'),
+        'HOST': os.environ.get('DB_HOST', 'postgres'),
         'PORT': os.environ.get('DB_PORT', '5432'),
     },
 }

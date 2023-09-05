@@ -11,6 +11,8 @@ services:
       - ./mediafiles:/tmp/blog_app/mediafiles
     ports:
       - "8000:8000"
+    environment:
+      DB_HOST: postgres
     env_file:
       - ./envs/.env
     depends_on:
@@ -24,6 +26,7 @@ services:
       POSTGRES_PASSWORD: password
       POSTGRES_USER: postgres-user
       POSTGRES_DB: blogdb
+      POSTGRES_HOST: postgres
       PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
       - ./postgresql:/var/lib/postgresql/data
