@@ -1,4 +1,4 @@
-/postgresql/
-/static/
-/envs/
-/certbot/
+#/postgresql/
+#/static/
+#/envs/
+#/certbot/
