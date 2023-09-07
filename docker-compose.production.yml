@@ -12,7 +12,8 @@ services:
     ports:
       - "8000:8000"
     environment:
-      DB_HOST: postgres
+      - DEBUG=FALSE
+      - ALLOWED_HOSTS=greenhometips.info
     env_file:
       - ./envs/.env
     depends_on:
@@ -23,14 +24,13 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_PASSWORD: password
-      POSTGRES_USER: postgres-user
-      POSTGRES_DB: blogdb
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_USER: myuser
+      POSTGRES_DB: greenhometips
       POSTGRES_HOST: postgres
       PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
       - ./postgresql:/var/lib/postgresql/data
-    user: postgres
 
   nginx:
     image: nginx

@@ -26,7 +26,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY='django-insecure-vpl380zxe&kc6-9)$961ispny^c8v5)x4o58=qiluv(mc9w94w'
 SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG')
-# ALLOWED_HOSTS = ['127.0.0.1']
+# DEBUG=True
+# ALLOWED_HOSTS = ['*']
 # SECURITY WARNING: don't run with debug turned on in production!
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split()
 CSRF_TRUSTED_ORIGINS = [f'http://{x}:80' for x in os.environ.get('ALLOWED_HOSTS', '').split(' ')]
@@ -34,9 +35,9 @@ CSRF_TRUSTED_ORIGINS = [f'http://{x}:80' for x in os.environ.get('ALLOWED_HOSTS'
 DATABASES = {
     'default': {
         'ENGINE': os.environ.get('DB_ENGINE', 'django.db.backends.postgresql'),
-        'NAME': os.environ.get('DB_NAME', 'blogdb'),
-        'USER': os.environ.get('DB_USER', 'postgres-user'),
-        'PASSWORD': os.environ.get('DB_PASSWORD', 'password'),
+        'NAME': os.environ.get('DB_NAME', 'greenhometips'),
+        'USER': os.environ.get('DB_USER', 'myuser'),
+        'PASSWORD': os.environ.get('DB_PASSWORD', 'mypassword'),
         'HOST': os.environ.get('DB_HOST', 'postgres'),
         'PORT': os.environ.get('DB_PORT', '5432'),
     },
@@ -44,9 +45,9 @@ DATABASES = {
 # DATABASES = {
 #     "default": {
 #         "ENGINE": "django.db.backends.postgresql",
-#         "NAME": "blogdb",
-#         "USER": "postgres-user",
-#         "PASSWORD": "password",
+#         "NAME": "greenhometips",
+#         "USER": "myuser",
+#         "PASSWORD": "mypassword",
 #         "HOST": "127.0.0.1",
 #         "PORT": "5432",
 #     }
